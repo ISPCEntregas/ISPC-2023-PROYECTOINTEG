@@ -24,15 +24,6 @@
     }
   }
   
-  @-webkit-keyframes rotate {
-    from {
-      -webkit-transform: rotate(0deg);
-    }
-    to {
-      -webkit-transform: rotate(360deg);
-    }
-  }
-  
   #body {
     border: 2px solid orange;
     font-family: "Roboto", sans-serif;
