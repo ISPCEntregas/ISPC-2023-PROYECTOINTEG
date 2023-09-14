@@ -38,6 +38,7 @@
     font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
+    
   }
   .section1 {
     background-color: black;
@@ -111,7 +112,7 @@
     background-color: black;
     color: aliceblue;
     text-align: center;
-    background-image: url("https://us.123rf.com/450wm/altitudevisual/altitudevisual2212/altitudevisual221206329/195283845-hermosa-deliciosa-pizza-con-salsa-de-tomate-y-verduras-sobre-fondo-negro.jpg?ver=6");
+    background-image: url("https://cdn.pixabay.com/photo/2014/09/03/20/15/shoes-434918_1280.jpg");
     background-size: cover;
   }
   .sect2 {
@@ -121,15 +122,15 @@
     justify-content: center;
     align-content: center;
     gap: 2%;
-    background-image: url("https://static9.depositphotos.com/1672917/1142/i/950/depositphotos_11429271-stock-photo-pizza-oven.jpg");
+    background-image: url("https://cdn.pixabay.com/photo/2017/07/02/19/24/dumbbells-2465478_640.jpg ");
     background-size: cover;
   }
   .imgpizz {
     border: 2px solid black;
     box-shadow: 2px 2px 2px;
     width: 90%;
-    max-width: 250px;
-    max-height: 190;
+    max-width: 230px;
+    max-height: 180;
     margin: 2px;
     animation-name: ampliacion;
     animation-duration: 3s;
@@ -161,7 +162,7 @@
     font-size: 30px;
     display: flex;
     justify-content: space-around;
-    margin-top: 1cm;
+    margin-top: 1.5cm;
     margin-bottom: 1cm;
     color: orange;
   }
