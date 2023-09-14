@@ -1,0 +1,46 @@
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(250, 248, 244);
+    padding: 15px;
+     background-color: white;
+    background-size: contain;
+  }
+  
+  .producto {
+    width: 300px;
+    border: 1px solid whitesmoke;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: black;
+    color:white;
+  }
+  
+  .producto img {
+    width: 200px;
+    height: 200px;
+    object-fit: auto;
+    margin: auto;
+    padding: 5px;
+    border: 1px solid whitesmoke;
+    margin-top: 7px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .producto img:hover {
+    transform: scale(1.5);
+  }
+  
+  .producto h3 {
+    margin: 10px;
+  }
+  
+  .producto p {
+    margin: 5px;
+    font-weight: bold;
+  }
+  
