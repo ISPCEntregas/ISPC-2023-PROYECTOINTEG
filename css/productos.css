@@ -44,3 +44,34 @@
     font-weight: bold;
   }
   
+  /* Estilo para el contenedor de la selección de talle */
+.form-group {
+  margin-top: 20px; 
+}
+
+/* Estilo para la etiqueta de selección de talle */
+label {
+  font-weight: bold; 
+}
+
+/* Estilo para la lista desplegable de talle */
+.form-control {
+  width: 100%; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+}
+/* Estilo básico para el botón de comprar */
+.boton-comprar {
+  background-color: #007bff; 
+  color: #fff; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+/* Estilo cuando el cursor pasa por encima del botón */
+.boton-comprar:hover {
+  background-color: #0056b3; 
+}
