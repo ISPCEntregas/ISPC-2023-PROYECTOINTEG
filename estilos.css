@@ -1,4 +1,4 @@
-@keyframes aparicion {
+  @keyframes aparicion {
     0% {
       opacity: 0;
     }
@@ -9,12 +9,14 @@
       opacity: 1;
     }
   }
+
   @keyframes ampliacion {
     from {
       right: 100%;
       width: 200%;
     }
   }
+
   @keyframes rotate {
     from {
       transform: rotate(0deg);
@@ -25,58 +27,111 @@
   }
   
   #body {
-    border: 2px solid orange;
-    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
-    
   }
-  .section1 {
-    background-color: black;
-  }
+
   .titulo {
     color: orange;
-    border: 2px solid whitesmoke;
     background-color: black;
     height: auto;
     margin: 0;
     padding: 0;
   }
+
   .subt {
     color: aliceblue;
   }
-  
+
+  nav {
+    display: flex;
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    justify-content: right;
+    align-items: center;
+  }
+
+  nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0.5vh;
+    font-family: "montserrat";
+    font-size: 15px;
+  }
+
+  .carrousel{
+    background-image: url(https://www.streetprorunning.com/blog/wp-content/uploads/2017/12/mejores-zapatillas-calidad-precio-1263x560.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    text-align: right;
+    color: white;
+    font-family: "montserrat";
+  }
+
+  .panel{
+    height: 800px;
+    width: 40%;
+    opacity: 0.5;
+    background-color: #f1f1f1;
+    position: absolute;
+  }
+
   .logo {
-    width: 150px;
-    height: 150px;
+    margin-top: -70px;
+    margin-left: -120px;
     animation-name: aparicion;
     animation-duration: 2s;
+    background-image: url(imagenes/logo.png);
+    background-size: cover;
+    width: 800px;
+    height: 800px;
+    position: absolute;
   }
-  .header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: black;
-    border: 2px solid orange;
+
+  .carrousel h1{
+    padding-top: 590px;
+    padding-right: 40px;
+    text-shadow: 1px 1px 1px black;
   }
-  .link {
-    color: orange;
-    text-decoration: none;
-    margin: 5vh;
-    font-weight: 900;
-    font-size: 20px;
+
+  .carrousel p{
+    padding-right: 40px;
+    text-shadow: 1px 1px 1px black;
   }
-  .Banner {
-    padding: 10px;
+
+  .btns{
+    text-align: center;
+  }
+
+  .boton{
+    margin-top: 100px;
+    border-radius: 100px;
+    border: black;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    background-color: #f1f1f1;
+    box-shadow: 1px 1px 5px black;
+  }
+
+  .banner {
     background-color: orange;
-    color: black;
     display: flex;
     justify-content: center;
     font-size: 20px;
-    border: 7px dotted black;
     animation-name: aparicion;
     animation-duration: 2s;
   }
+
+  .banner p{
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px black;
+    font-family: "montserrat";
+    padding-top: 10px;
+  }
+
   #butbanner {
     color: orange;
     background-color: black;
@@ -89,23 +144,35 @@
     display: flex;
     justify-content: center;
     font-size: 25px;
-    border: 7px double orange;
+
   }
+
   .principal {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    height: 60vh;
+    display: inline;
+    grid-template-columns: 100% 100%;
+    height: 120vh;
   }
-  .sect0 {
-    background-color: black;
-  }
+
   .sect1 {
     background-color: black;
     color: aliceblue;
-    text-align: center;
+    text-align: left;
     background-image: url("https://cdn.pixabay.com/photo/2014/09/03/20/15/shoes-434918_1280.jpg");
     background-size: cover;
+    height: 800px;
   }
+
+  .sect1 h1{
+    padding-top: 620px;
+    padding-left: 40px;
+    text-shadow: 1px 1px 1px black;
+  }
+
+  .sect1 p{
+    padding-left: 40px;
+    text-shadow: 1px 1px 1px black;
+  }
+
   .sect2 {
     background-color: orange;
     display: flex;
@@ -115,8 +182,10 @@
     gap: 2%;
     background-image: url("https://cdn.pixabay.com/photo/2017/07/02/19/24/dumbbells-2465478_640.jpg ");
     background-size: cover;
+    height: 820px;
   }
-  .imgpizz {
+
+  .imgsect {
     border: 2px solid black;
     box-shadow: 2px 2px 2px;
     width: 90%;
@@ -129,51 +198,39 @@
     animation-name: aparicion;
     animation-duration: 2s;
   }
-  .imgsec1 {
-    border-radius: 50%;
-    margin: 18px;
-    -webkit-animation: 5s rotate linear infinite;
-    animation: 5s rotate linear infinite;
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
+
+  nav{
+    justify-content: center;
   }
-  
-  .foot {
+
+  footer{
     background-color: black;
-    border: 7px double orange;
+    text-align: center;
+    height: 20vh;
+    margin-top: -20px;
   }
-  
-  marquee {
-    color: orange;
+
+  footer p {
+    padding-bottom: 20px;
+    color: rgb(255, 255, 255);
+    font-family: "montserrat";
   }
-  .derechos {
-    color: orange;
-  }
-  footer .pie {
-    font-size: 30px;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1.5cm;
-    margin-bottom: 1cm;
-    color: orange;
-  }
+
   footer .pie a:hover {
-    text-shadow: 3px 3px 3px orange;
-  }
-  
-  footer a:hover {
-    text-shadow: 7px 7px 3px red;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f1f1f1;
+    text-shadow: 3px 3px 3px rgb(113, 36, 255); 
   }
   
   @media (max-width: 768px) {
-    .logo {
-      width: 100px;
-      height: 100px;
+    .logo{
+      margin-left: -160px;
+    }
+
+    .panel {
+      display: none;
+    }
+
+    .carrousel{
+      text-align: center;
     }
   
     .header {
@@ -185,7 +242,7 @@
       font-size: 16px;
     }
   
-    .Banner {
+    .banner p {
       font-size: 16px;
     }
   
@@ -237,6 +294,10 @@
     .link {
       margin: 1vh;
       font-size: 14px;
+    }
+
+    .carrousel{
+      text-align: center;
     }
   
     .Banner {
