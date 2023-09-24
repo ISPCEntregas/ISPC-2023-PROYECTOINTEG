@@ -1,3 +1,5 @@
+  /* Animaciones*/
+
   @keyframes aparicion {
     0% {
       opacity: 0;
@@ -25,12 +27,14 @@
       transform: rotate(360deg);
     }
   }
-  
+
+  /* Estilos generales*/
   #body {
     margin: 0;
     padding: 0;
   }
 
+ /* Estilos para el titulo*/
   .titulo {
     color: orange;
     background-color: black;
@@ -39,10 +43,12 @@
     padding: 0;
   }
 
+  /* Estilos para el subtitulo*/
   .subt {
     color: aliceblue;
   }
 
+   /* Estilos para la barra de navegacion*/
   nav {
     display: flex;
     background-color: black;
@@ -60,6 +66,7 @@
     font-size: 15px;
   }
 
+ /* Estilos para el carrusel*/
   .carrousel{
     background-image: url(https://www.streetprorunning.com/blog/wp-content/uploads/2017/12/mejores-zapatillas-calidad-precio-1263x560.jpg);
     background-size: cover;
@@ -70,6 +77,8 @@
     font-family: "montserrat";
   }
 
+
+  /* Estilos para el panel*/
   .panel{
     height: 800px;
     width: 40%;
@@ -78,6 +87,7 @@
     position: absolute;
   }
 
+  /* Estilos para el logo*/
   .logo {
     margin-top: -70px;
     margin-left: -120px;
@@ -90,16 +100,6 @@
     position: absolute;
   }
 
-  .carrousel h1{
-    padding-top: 590px;
-    padding-right: 40px;
-    text-shadow: 1px 1px 1px black;
-  }
-
-  .carrousel p{
-    padding-right: 40px;
-    text-shadow: 1px 1px 1px black;
-  }
 
   .btns{
     text-align: center;
