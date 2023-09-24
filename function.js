@@ -1,5 +1,3 @@
-import { productos } from "./BaseDatos.js";
-
 let carrousel = document.getElementById("carrousel");
 let check1 = document.getElementById("check-1");
 let check2 = document.getElementById("check-2");
@@ -25,32 +23,3 @@ check3.addEventListener('click', function(){
     carrousel.style.height = "800px";
     carrousel.style.transition = "0.5s";
 });
-
-const contenedorProductos = document.querySelector("#productos");
-
-function mostrarProductos() {
-  productos.forEach((producto) => {
-    const tarjeta = document.createElement("div");
-    tarjeta.classList.add("producto");
-
-    const imagen = document.createElement("img");
-    imagen.src = producto.imagen;
-    imagen.alt = producto.nombre;
-    tarjeta.appendChild(imagen);
-
-    const nombre = document.createElement("h3");
-    nombre.innerText = producto.nombre;
-    tarjeta.appendChild(nombre);
-
-    const descripcion = document.createElement("p");
-    descripcion.innerText = producto.descripcion;
-    tarjeta.appendChild(descripcion);
-
-    const precio = document.createElement("p");
-    precio.innerText = `$${producto.precio}`;
-    tarjeta.appendChild(precio);
-
-    contenedorProductos.appendChild(tarjeta);
-  });
-}
-mostrarProductos();
