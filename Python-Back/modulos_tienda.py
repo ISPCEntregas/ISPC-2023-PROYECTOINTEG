@@ -20,10 +20,10 @@ class Pedido:
         self.zapatillas = zapatillas
         self.estado = "Pendiente"  
 
-class LineaPedido:
-    def __init__(self, zapatilla, cantidad):
-        self.zapatilla = zapatilla
-        self.cantidad = cantidad
+    class LineaPedido:
+        def __init__(self, zapatilla, cantidad):
+            self.zapatilla = zapatilla
+            self.cantidad = cantidad
 
 class GestorTienda:
     def __init__(self, host, user, password, database):

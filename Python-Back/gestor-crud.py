@@ -1,8 +1,9 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from modulos_tienda import GestorTienda
 
 app = Flask(__name__)
-
+CORS(app) 
 
 DB_HOST = 'localhost'
 DB_USER = 'root'
@@ -27,7 +28,7 @@ def crear_zapatilla():
     talla = data['talla']
     precio = data['precio']
     categoria_id = data['categoria_id']
-    gestor.insertar_zapatilla(nombre, marca_id, talla, precio, categoria_id)
+    gestor.crear_zapatilla(nombre, marca_id, talla, precio, categoria_id)
     return 'Zapatilla creada con éxito'
 
 @app.route('/zapatillas/<int:zapatilla_id>', methods=['PUT'])
