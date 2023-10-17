@@ -3,11 +3,11 @@ function cargarZapatillas() {
         .then(response => response.json())
         .then(data => {
             const zapatillaList = document.getElementById('zapatilla-list');
-            zapatillaList.innerHTML = '';  // Limpiar la lista
+            zapatillaList.innerHTML = ''; 
 
             data.forEach(zapatilla => {
                 const listItem = document.createElement('li');
-                listItem.textContent = `Nombre: ${zapatilla.nombre}, Marca: ${zapatilla.marca}, Talla: ${zapatilla.talla}, Precio: ${zapatilla.precio}, Categoría: ${zapatilla.categoria}`;
+                listItem.textContent = `ID: ${zapatilla.id} Nombre: ${zapatilla.nombre}, Marca: ${zapatilla.marca}, Talla: ${zapatilla.talla}, Precio: ${zapatilla.precio}, Categoría: ${zapatilla.categoria}`;
                 zapatillaList.appendChild(listItem);
             });
         })
@@ -56,4 +56,32 @@ document.getElementById('crear-zapatilla-form').addEventListener('submit', funct
     document.getElementById('categoria_id').value = '';
 });
 
-cargarZapatillas();  // Cargar la lista inicial
+
+function eliminarZapatilla() {
+    const zapatillaId = document.getElementById('eliminar-zapatilla-id').value;
+
+    if (zapatillaId) {
+        if (confirm(`¿Estás seguro de que deseas eliminar la zapatilla con ID ${zapatillaId}?`)) {
+          
+            fetch(`http://127.0.0.1:5000/zapatillas/${zapatillaId}`, {
+                method: 'DELETE'
+            })
+            .then(response => response.text())
+            .then(data => {
+                alert(data);
+                cargarZapatillas();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    } else {
+        alert('Por favor, ingresa un ID de zapatilla válido.');
+    }
+}
+
+document.getElementById('eliminar-zapatilla-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    eliminarZapatilla();
+});
+cargarZapatillas();  
