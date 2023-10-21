@@ -21,7 +21,7 @@ body {
     max-width: 500px;
     width: 90%;
     box-sizing: border-box;
-    background-color: gray;
+    background-color: orange;
     
 }
 
@@ -48,7 +48,7 @@ input {
 
 button {
     padding: 10px;
-    background-color: #1877f2;
+    background-color: black;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -58,7 +58,7 @@ button {
 }
 
 button:hover {
-    background-color: #1153c9;
+    background-color: blue;
 }
 
 .hidden {
