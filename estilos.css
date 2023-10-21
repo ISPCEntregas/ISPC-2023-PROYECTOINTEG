@@ -72,7 +72,7 @@
 
   .panel{
     height: 800px;
-    width: 40%;
+    width: 45%;
     opacity: 0.5;
     background-color: #f1f1f1;
     position: absolute;
@@ -91,8 +91,8 @@
   }
 
   .logo h1{
-    margin-top: -35vh;
-    margin-right: 13vh;
+    margin-top: -50vh;
+    margin-right: 15.5vh;
     color: black;
   }
 
@@ -291,7 +291,7 @@
   }
   /* Estilo básico para el botón de comprar */
   .boton-comprar {
-  background-color: #007bff; 
+  background-color: orange; 
   color: #fff; 
   padding: 10px 20px; 
   border: none; 
@@ -301,7 +301,7 @@
 
   /* Estilo cuando el cursor pasa por encima del botón */
   .boton-comprar:hover {
-  background-color: #0056b3; 
+  background-color: blue; 
   }
   
   @media (max-width: 768px) {
@@ -466,7 +466,7 @@
   }
   
   input[type="submit"]:hover {
-    background-color: rebeccapurple;
+    background-color: blue;
   }
   
   .error {
@@ -501,3 +501,5 @@
     color: orange;
     text-align: center;
   }
+
+
