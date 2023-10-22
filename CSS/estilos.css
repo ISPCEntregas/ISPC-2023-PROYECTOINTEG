@@ -48,7 +48,6 @@
     background-color: black;
     height: 50px;
     width: 100%;
-    justify-content: right;
     align-items: center;
   }
 
@@ -88,6 +87,14 @@
     width: 400px;
     height: 420px;
     position: absolute;
+  }
+
+  .login{
+    background-image: url("IMAGENES/login.png");
+    width: 5vh;
+    height: 5vh;
+    background-size: cover ;
+    margin-left: -78vh;
   }
 
   .logo h1{
