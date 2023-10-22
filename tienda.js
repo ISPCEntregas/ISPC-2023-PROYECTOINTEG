@@ -1,4 +1,4 @@
-import { productos } from "./BaseDatos.js";
+import { productos } from "BaseDatos.js";
 const contenedorProductos = document.querySelector("#productos");
 
 function mostrarProductos() {
