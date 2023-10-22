@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y Registro</title>
+    <link rel="shortcut icon" href="/imagenes/nosotros1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/CSS/login.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Acceso</h1>
+        <form id="login-form" class="form">
+            <label for="login-username">Usuario</label>
+            <input type="text" id="login-username" required>
+            <label for="login-password">Contraseña</label>
+            <input type="password" id="login-password" required> <br>
+            <button type="submit">Ingresar</button>
+            <p id="login-message"></p>
+        </form>
+        <div id="register-toggle" class="toggle-button">
+            <button id="toggle-button">¿Necesitás una cuenta? Registrate</button>
+        </div> <br>
+        <form id="register-form" class="form hidden">
+            <label for="register-username">Nombre de usuario</label>
+            <input type="text" id="register-username" required>
+            <label for="register-password">Contraseña</label>
+            <input type="password" id="register-password" required>
+            <label for="first-name">Nombre</label>
+            <input type="text" id="first-name" required maxlength="50">
+            <label for="last-name">Apellido</label>
+            <input type="text" id="last-name" required maxlength="50">
+            <label for="dni">DNI</label>
+            <input type="number" id="dni" required min="1000000" max="99999999"><br>
+            <button type="submit">Registrarse</button>
+            <p id="register-message"></p>
+        </form>
+        
+    </div>
+    <script src="/JS/index.js"></script>
+</body>
+</html>
