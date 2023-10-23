@@ -23,7 +23,7 @@ document.getElementById('login-form').addEventListener('submit', function(e) {
     if (user) {
         document.getElementById('login-message').textContent = '¡Login exitoso! Bienvenido, ' + user.username + '!';
         setTimeout(function() {
-            window.location.href = 'index.html'; 
+            window.location.href = '/index.html'; 
         }, 2000);
     } else {
         document.getElementById('login-message').textContent = 'Nombre de usuario o contraseña incorrectos.';

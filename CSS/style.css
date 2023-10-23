@@ -21,7 +21,7 @@
   
   header {
     height: 320px;
-    background: black url('img/carrousel1.jpeg') center center no-repeat;
+    background: black url('/img/carrousel1.jpeg') center center no-repeat;
     background-size: cover;
     color: white;
     position: relative;
