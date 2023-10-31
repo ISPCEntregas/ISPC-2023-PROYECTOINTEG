@@ -430,6 +430,7 @@
       font-size: 16px;
     }
   }
+
   
   form {
     background-color: orange;
@@ -493,6 +494,13 @@
       width: 70%;
       font-size: 15px;
     }
+    .sect1{
+      display: none;
+    }
+    .carrousel{
+      display: none;
+    }
+  
   }
   .chisContainer {
     background-color: black;
