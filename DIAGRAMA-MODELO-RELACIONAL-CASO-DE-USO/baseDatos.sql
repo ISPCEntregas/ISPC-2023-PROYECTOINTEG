@@ -11,11 +11,11 @@ CREATE TABLE Categoria (
 CREATE TABLE Zapatilla (
     id INTEGER PRIMARY KEY,
     nombre TEXT NOT NULL,
-    marca_id INTEGER,
+    marca TEXT NOT NULL,
     talla REAL NOT NULL,
     precio REAL NOT NULL,
     categoria_id INTEGER,
-    FOREIGN KEY (marca_id) REFERENCES Marca(id),
+    FOREIGN KEY (marca) REFERENCES Marca,
     FOREIGN KEY (categoria_id) REFERENCES Categoria(id)
 );
 
