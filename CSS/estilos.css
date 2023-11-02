@@ -82,7 +82,7 @@
     margin-left: 80px;
     animation-name: aparicion;
     animation-duration: 2s;
-    background-image: url(/imagenes/logo-nav.png);
+    background-image: url("../imagenes/logo.png");
     background-size: cover;
     width: 400px;
     height: 420px;
@@ -90,7 +90,7 @@
   }
 
   .login{
-    background-image: url("/CSS/IMAGENES/login.png");
+    background-image: url("./IMAGENES/logo.png");
     width: 5vh;
     height: 5vh;
     background-size: cover ;
